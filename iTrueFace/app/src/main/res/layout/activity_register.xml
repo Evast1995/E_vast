@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/stroken_color">
+    <com.evast.itrueface.weight.TemplateTitle
+        android:id="@+id/register_title" android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" android:background="@color/white"/>
+    <EditText
+        android:id="@+id/register_phone" android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_height" android:layout_margin="@dimen/register_edit_margin"
+        android:hint="@string/phone_num" android:textColorHint="@color/gray"
+        android:textColor="@color/black" android:background="@mipmap/edit_background"
+        android:textSize="12dp" android:gravity="center_vertical"/>
+    <EditText
+        android:id="@+id/register_password" android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_height" android:layout_margin="@dimen/register_edit_margin"
+        android:hint="@string/password" android:textColorHint="@color/gray"
+        android:textColor="@color/black" android:background="@mipmap/edit_background"
+        android:textSize="12dp" android:gravity="center_vertical"/>
+    <EditText
+        android:id="@+id/register_surepassword" android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_height" android:layout_margin="@dimen/register_edit_margin"
+        android:hint="@string/sure_password" android:textColorHint="@color/gray"
+        android:textColor="@color/black" android:background="@mipmap/edit_background"
+        android:textSize="12dp" android:gravity="center_vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content" android:layout_margin="@dimen/register_edit_margin">
+        <EditText
+            android:id="@+id/register_auth" android:layout_width="@dimen/register_authedit_width"
+            android:layout_height="@dimen/register_edit_height"
+            android:hint="@string/auth" android:textColorHint="@color/gray"
+            android:textColor="@color/black" android:background="@mipmap/edit_background"
+            android:textSize="12dp" android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/register_sendauth_btn" android:layout_width="wrap_content"
+            android:layout_height="@dimen/register_edit_height" android:background="@drawable/auth_bg"
+            android:text="@string/send_code" android:layout_marginLeft="@dimen/register_authbtn_marginleft"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/register_but" android:layout_width="match_parent"
+        android:layout_height="@dimen/register_edit_height" android:layout_gravity="center_horizontal"
+        android:text="@string/register" android:layout_margin="@dimen/register_edit_margin"
+        android:background="@drawable/login_btnbg" android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp" android:layout_weight="3"
+            android:layout_height="match_parent" android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/head_image" android:layout_width="@dimen/teacher_image_dimen"
+                android:layout_height="@dimen/teacher_image_dimen" android:layout_gravity="center"
+                android:layout_margin="@dimen/teacher_headimage_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp" android:layout_weight="4"
+            android:layout_height="match_parent" android:orientation="vertical"
+            android:gravity="center_vertical" android:layout_marginTop="@dimen/teacher_layout_marginbottom">
+            <TextView
+                android:id="@+id/teacher_name" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/teacher_name"
+                android:textColor="@color/gray" android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/teacher_phone" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/teacher_phone"
+                android:textColor="@color/gray" android:textSize="13sp"
+                android:layout_marginTop="@dimen/teacher_text_margintop"/>
+            <TextView
+                android:id="@+id/teacher_introduce" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/teacher_introduce"
+                android:textColor="@color/gray" android:textSize="13sp"
+                android:layout_marginTop="@dimen/teacher_text_margintop"/>
+            <TextView
+                android:id="@+id/teacher_introduce_context" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:maxLines="2"
+                android:textColor="@color/black" android:textSize="12sp"
+                android:layout_marginTop="@dimen/teacher_text_margintop"  />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="0dp" android:layout_weight="3"
+            android:layout_height="wrap_content" android:gravity="center">
+            <ImageView
+                android:id="@+id/auth_icon" android:layout_width="@dimen/teacher_icon_dimen"
+                android:layout_height="@dimen/teacher_icon_dimen" android:src="@mipmap/auth_icon"
+                android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/teacher_authicon_margin_left"/>
+            <TextView
+                android:id="@+id/auth_name" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="已认证"
+                android:textColor="@color/gray" android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/teacher_authtext_margin_left"/>
+            <ImageView
+                android:id="@+id/reward_icon" android:layout_width="@dimen/teacher_icon_dimen"
+                android:layout_height="@dimen/teacher_icon_dimen" android:src="@mipmap/reward_icon"
+                android:layout_gravity="center_vertical" android:layout_marginLeft="13dp"/>
+            <TextView
+                android:id="@+id/reward_name" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="银牌"
+                android:textColor="@color/gray" android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/teacher_authtext_margin_left"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp" android:layout_weight="4"
+            android:layout_height="wrap_content" android:layout_marginBottom="@dimen/teacher_layout_marginbottom"
+            android:layout_marginRight="@dimen/teacher_distance_marginright">
+            <TextView
+                android:id="@+id/teacher_address" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="北京市海淀区学院路"
+                android:textColor="@color/gray" />
+            <TextView
+                android:id="@+id/teacher_distance" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                android:textColor="@color/gray" android:text="1km" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

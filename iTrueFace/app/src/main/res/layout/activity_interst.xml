@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_height="match_parent"
+    tools:ignore="ResAuto" android:background="@color/stroken_color"
+    xmlns:other="http://schemas.android.com/apk/res/com.evast.itrueface">
+    <include layout="@layout/title_layout"/>
+    <com.evast.itrueface.weight.TitleView
+        android:id="@+id/interst_control" android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" other:left_text="@string/interst_top"
+        other:right_text="@string/now_course" android:gravity="center_vertical" />
+    <ListView
+        android:id="@+id/interst_list" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:divider="@color/stroken_color"
+        android:dividerHeight="@dimen/teacher_divide_height"
+        android:background="@color/white"/>
+</LinearLayout>

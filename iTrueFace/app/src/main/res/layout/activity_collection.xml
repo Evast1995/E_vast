@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_height="match_parent"
+    tools:ignore="ResAuto" android:background="@color/stroken_color">
+    <include layout="@layout/title_layout"/>
+    <ListView
+        android:id="@+id/course_list" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:divider="@color/stroken_color"
+        android:dividerHeight="@dimen/teacher_divide_height" android:layout_marginTop="@dimen/collection_margintop"
+        android:background="@color/white"/>
+</LinearLayout>

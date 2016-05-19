@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/contacts_classroom" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@color/stroken_color"
+        android:textColor="@color/gray" android:gravity="center_vertical"
+        android:textSize="15sp" android:padding="@dimen/contacts_classroom_padding" />
+    <ListView
+        android:id="@+id/course_listview" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:divider="@color/stroken_color"
+        android:dividerHeight="@dimen/stroken_height"/>
+    <TextView
+        android:id="@+id/contacts_friends" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@color/stroken_color"
+        android:textColor="@color/gray" android:gravity="center_vertical"
+        android:textSize="15sp" android:padding="@dimen/contacts_classroom_padding" />
+    <ListView
+        android:id="@+id/friend_listview" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:divider="@color/stroken_color"
+        android:dividerHeight="@dimen/stroken_height"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/title_height"
+    android:background="@color/stroken_color">
+    <LinearLayout
+        android:layout_width="wrap_content" android:layout_centerInParent="true"
+        android:layout_height="wrap_content" android:layout_margin="@dimen/course_control_margin" >
+        <Button
+            android:id="@+id/one_btn" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:background="@drawable/course_onebtn_bg"
+            android:textColor="@color/white" android:layout_weight="1"
+            android:text="@string/course_tobepaid"/>
+        <Button
+            android:id="@+id/two_btn" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:textColor="@color/blue"
+            android:background="@drawable/course_twobtn_bg" android:layout_weight="1"
+            android:text="@string/course_alreadypaid"/>
+        <Button
+            android:id="@+id/three_btn" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:textColor="@color/blue"
+            android:background="@drawable/course_threebtn_bg" android:layout_weight="1"
+            android:text="@string/course_unsubscribe"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+    <ImageView
+        android:id="@+id/course_collection_icon" android:layout_width="@dimen/course_bottom_icon_dimen"
+        android:layout_height="@dimen/course_bottom_icon_dimen" android:src="@mipmap/collected_icon"
+        android:layout_alignParentRight="true" android:layout_margin="@dimen/course_collection_margin"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content" android:id="@+id/course_uplayout">
+        <LinearLayout
+            android:layout_width="0dp" android:layout_weight="3"
+            android:layout_height="match_parent" android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/head_image" android:layout_width="@dimen/course_image_dimen"
+                android:layout_height="@dimen/course_image_dimen" android:layout_gravity="center"
+                android:layout_margin="@dimen/course_headimage_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp" android:layout_weight="4"
+            android:layout_height="match_parent" android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/course_name" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/course_name_text"
+                android:textColor="@color/gray" android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/course_teachername" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/teacher_name"
+                android:textColor="@color/gray" android:textSize="15sp"
+                android:layout_marginTop="@dimen/course_text_margintop"/>
+            <TextView
+                android:id="@+id/course_price" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/course_price"
+                android:textColor="@color/gray" android:textSize="15sp"
+                android:layout_marginTop="@dimen/course_text_margintop"/>
+            <TextView
+                android:id="@+id/course_age" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/course_age"
+                android:textColor="@color/black" android:textSize="12sp"
+                android:layout_marginTop="@dimen/course_text_margintop"  />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/course_middle_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_below="@id/course_uplayout"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/auth_icon" android:layout_width="@dimen/course_icon_dimen"
+            android:layout_height="@dimen/course_icon_dimen" android:src="@mipmap/auth_icon"
+            android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/course_authicon_margin_left"/>
+        <TextView
+            android:id="@+id/auth_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="已认证"
+            android:textColor="@color/gray" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/course_authtext_margin_left"/>
+        <ImageView
+            android:id="@+id/reward_icon" android:layout_width="@dimen/course_icon_dimen"
+            android:layout_height="@dimen/course_icon_dimen" android:src="@mipmap/reward_icon"
+            android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/course_authicon_margin_left"/>
+        <TextView
+            android:id="@+id/reward_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="银牌"
+            android:textColor="@color/gray" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/course_authtext_margin_left"/>
+        <ImageView
+            android:id="@+id/guarantee_icon" android:layout_width="@dimen/course_icon_dimen"
+            android:layout_height="@dimen/course_icon_dimen" android:src="@mipmap/guarantee_icon"
+            android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/course_authicon_margin_left"/>
+        <TextView
+            android:id="@+id/guarantee_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="保障"
+            android:textColor="@color/gray" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/course_authtext_margin_left"/>
+        <ImageView
+            android:id="@+id/star_icon" android:layout_width="@dimen/course_icon_dimen"
+            android:layout_height="@dimen/course_icon_dimen" android:src="@mipmap/star_icon"
+            android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/course_authicon_margin_left"/>
+        <TextView
+            android:id="@+id/star_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="4.9"
+            android:textColor="@color/gray" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/course_authtext_margin_left"/>
+        <ImageView
+            android:id="@+id/humans_icon" android:layout_width="@dimen/course_icon_dimen"
+            android:layout_height="@dimen/course_icon_dimen" android:src="@mipmap/humans_icon"
+            android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/course_authicon_margin_left"/>
+        <TextView
+            android:id="@+id/humans_num" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="60"
+            android:textColor="@color/gray" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/course_authtext_margin_left"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content" android:orientation="horizontal"
+        android:layout_height="wrap_content" android:layout_below="@+id/course_middle_layout"
+        android:layout_marginTop="@dimen/course_bottomlayout_margintop" android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/course_bottom_marginright" android:layout_marginBottom="@dimen/course_bottomlayout_margintop">
+        <ImageView
+            android:id="@+id/course_paid_icon" android:layout_width="@dimen/course_bottom_icon_dimen"
+            android:layout_height="@dimen/course_bottom_icon_dimen" android:src="@mipmap/wait_paid_icon"
+            android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/course_paid_margin_left"/>
+        <TextView
+            android:id="@+id/course_paid_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/course_nopaid"
+            android:textColor="@color/gray" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/course_authtext_margin_left"/>
+        <ImageView
+            android:id="@+id/course_unsubscribe_icon" android:layout_width="@dimen/course_bottom_icon_dimen"
+            android:layout_height="@dimen/course_bottom_icon_dimen" android:src="@mipmap/unsubscribe_icon"
+            android:layout_gravity="center_vertical" android:layout_marginLeft="@dimen/course_paid_margin_left"/>
+        <TextView
+            android:id="@+id/course_unsubscribe_name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/unsubscribe"
+            android:textColor="@color/gray" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/course_authtext_margin_left"/>
+        <TextView
+            android:id="@+id/course_acount" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/course_count"
+            android:textColor="@color/blue"  android:layout_marginLeft="@dimen/course_paid_margin_left"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+</RelativeLayout>

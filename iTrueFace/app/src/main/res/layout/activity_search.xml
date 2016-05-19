@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+        <TextView
+            android:id="@+id/cancel_tv" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/cancel"
+            android:textColor="@color/blue" android:layout_centerVertical="true"
+            android:layout_margin="@dimen/search_cancel_margin"/>
+        <TextView
+            android:id="@+id/search_searchtv" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/search"
+            android:layout_alignParentRight="true" android:layout_margin="@dimen/search_cancel_margin"
+            android:textColor="@color/blue" android:layout_centerVertical="true"/>
+        <LinearLayout
+            android:id="@+id/search_layout" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:background="@mipmap/search_edit_bg"
+            android:layout_margin="7dp" android:layout_toRightOf="@id/cancel_tv"
+            android:layout_toLeftOf="@id/search_searchtv" android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp" android:src="@mipmap/search_icon"
+                android:layout_height="20dp" android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/search_cancel_margin"/>
+            <EditText
+                android:id="@+id/search_edit" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@color/transparent"
+                android:textColorHint="@color/gray"  android:textColor="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_marginTop="1dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/history_search" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/history_search"
+            android:background="@color/stroken_color" android:textColor="@color/gray"
+            android:paddingBottom="@dimen/search_text_paddingtop" android:paddingTop="@dimen/search_text_paddingtop"
+            android:paddingLeft="@dimen/search_text_paddingleft"/>
+        <ImageView
+            android:id="@+id/history_del" android:layout_width="20dp"
+            android:layout_height="20dp" android:src="@mipmap/del_icon"
+            android:layout_alignParentRight="true" android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/search_text_paddingleft"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/history_layout" android:layout_width="match_parent"
+        android:orientation="horizontal" android:layout_height="wrap_content"
+        android:background="@color/white">
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hot_search" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/hot_search"
+        android:background="@color/stroken_color" android:textColor="@color/gray"
+        android:paddingBottom="@dimen/search_text_paddingtop" android:paddingTop="@dimen/search_text_paddingtop"
+        android:paddingLeft="@dimen/search_text_paddingleft"/>
+    <ListView
+        android:id="@+id/hot_search_list" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:dividerHeight="@dimen/stroken_height"
+        android:divider="@color/stroken_color"/>
+</LinearLayout>

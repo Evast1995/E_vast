@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/stroken_color"
+    android:orientation="vertical">
+    <include layout="@layout/title_layout" />
+    <RelativeLayout
+        android:id="@+id/suggest_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/setting_bg"
+        android:layout_marginTop="20dp" android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content" android:text="@string/suggestiong"
+            android:layout_height="wrap_content" android:layout_margin="12dp"
+             android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="wrap_content" android:src="@mipmap/right"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/report_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/setting_bg"
+        android:layout_marginTop="1dp" android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content" android:text="@string/report"
+            android:layout_height="wrap_content" android:layout_margin="12dp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="wrap_content" android:src="@mipmap/right"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/update_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/setting_bg"
+        android:layout_marginTop="1dp" android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content" android:text="@string/update"
+            android:layout_height="wrap_content" android:layout_margin="12dp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="wrap_content" android:src="@mipmap/right"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/about_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@drawable/setting_bg"
+        android:layout_marginTop="20dp" android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content" android:text="@string/about"
+            android:layout_height="wrap_content" android:layout_margin="10dp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="wrap_content" android:src="@mipmap/right"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/logout_btn" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/logout"
+        android:background="@drawable/setting_bg" android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_height="match_parent"
+    xmlns:otherelse="http://schemas.android.com/apk/res/com.evast.itrueface"
+    tools:ignore="ResAuto">
+    <include layout="@layout/title_layout"/>
+    <com.evast.itrueface.weight.ControlView
+        android:id="@+id/course_control" android:layout_width="match_parent"
+        android:layout_height="wrap_content" otherelse:onebtn_text="@string/course_tobepaid"
+        otherelse:twobtn_text="@string/course_alreadypaid" otherelse:threebtn_text="@string/course_unsubscribe"/>
+    <ListView
+        android:id="@+id/course_list" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:divider="@color/stroken_color"
+        android:dividerHeight="@dimen/teacher_divide_height"/>
+</LinearLayout>

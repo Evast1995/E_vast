@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="@dimen/arrow_icon_dimen"
+        android:layout_height="@dimen/arrow_icon_dimen"
+        android:src="@mipmap/left_icon"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/center_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="@dimen/action_bar_height"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

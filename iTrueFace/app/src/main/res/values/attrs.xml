@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleView">
+        <attr name="left_text" format="reference"/>
+        <attr name="right_text" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ControlView">
+        <attr name="onebtn_text" format="reference"/>
+        <attr name="twobtn_text" format="reference"/>
+        <attr name="threebtn_text" format="reference"/>
+    </declare-styleable>
+</resources>

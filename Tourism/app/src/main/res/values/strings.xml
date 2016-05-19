@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Tourism</string>
+    <string name="visit_plan">旅游计划</string>
+    <string name="visit_find">世界之窗</string>
+    <string name="comments">评论社区</string>
+    <string name="account">个人账号</string>
+
+    <string name="city_search">城市搜索</string>
+    <string name="nearby_search">周边搜索</string>
+    <string name="bound_search">范围搜索</string>
+
+    <string name="search">搜索</string>
+    <string name="input_key">关键字</string>
+    <string name="no_keystr">请输入关键字</string>
+    <string name="next_data">下一组数据</string>
+    <string name="input_city">输入城市</string>
+    <string name="no_search_data">当前无查询数据</string>
+    <string name="no_city">请输入城市</string>
+    <string name="add_plan">添加计划</string>
+    <string name="plan_name">计划名称:</string>
+    <string name="plan_start_time">开始时间:</string>
+    <string name="plan_end_time">结束时间:</string>
+    <string name="plan_overhead">计划花费:</string>
+    <string name="plan_address">计划地点:</string>
+    <string name="plan_info">计划信息:</string>
+    <string name="save_plan">添加计划</string>
+    <string name="plan_name_isnull">计划名称不能为空</string>
+    <string name="plan_address_isnull">旅游地点不能为空</string>
+    <string name="loading_addplan">正在添加......</string>
+    <string name="add_sucessful">添加成功</string>
+    <string name="is_delete">是否删除?</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete_successful">删除成功</string>
+    <string name="update_data">更新计划</string>
+    <string name="update_sucessful">更新成功</string>
+</resources>
