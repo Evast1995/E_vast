@@ -4,7 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="navigate_icon_dimen">23dp</dimen>
-    <dimen name="navigate_height">50dp</dimen>
+    <dimen name="navigate_height">55dp</dimen>
     <dimen name="navigate_margin_bottom">3dp</dimen>
     <dimen name="bottom_layout_padding">4dp</dimen>
     <dimen name="action_bar_height">45dp</dimen>

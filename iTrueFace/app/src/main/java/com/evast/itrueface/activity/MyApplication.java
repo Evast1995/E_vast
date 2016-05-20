@@ -13,6 +13,7 @@ public class MyApplication extends Application{
     private static final long serialVersionUID = -9067654039944252043L;
     private RequestQueue requestQueue;
     private static MyApplication context;
+
     @Override
     public void onCreate() {
         super.onCreate();

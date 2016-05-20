@@ -6,4 +6,6 @@ package com.ychen.tourism.util;
  */
 public interface ContantsUtil {
     String PLAN_BEAN_KEY = "plan_bean";
+    String FOOD_KEY = "food_key";//传递食物的名称时的键
+    String FOOD_STORE = "food_store";//传递店铺名称的键
 }

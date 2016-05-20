@@ -4,6 +4,7 @@
     <string name="visit_find">世界之窗</string>
     <string name="comments">评论社区</string>
     <string name="account">个人账号</string>
+    <string name="vist_delicous">美食天地</string>
 
     <string name="city_search">城市搜索</string>
     <string name="nearby_search">周边搜索</string>
@@ -35,4 +36,14 @@
     <string name="delete_successful">删除成功</string>
     <string name="update_data">更新计划</string>
     <string name="update_sucessful">更新成功</string>
+
+    <string name="core_error_text">抱歉无法加载出来〒_〒</string>
+    <string name="core_error_button">重新加载</string>
+
+    <string name = "change_food">选择菜谱</string>
+    <string name = "open_message">显示全部</string>
+    <string name = "making_step">制作步骤</string>
+    <string name = "close_message">收缩信息</string>
+    <string name = "delicous_food">美食天地</string>
+    <string name = "my_plan">旅游计划</string>
 </resources>

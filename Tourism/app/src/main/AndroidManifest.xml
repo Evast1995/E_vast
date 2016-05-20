@@ -17,14 +17,12 @@
     <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <!-- 用于读取手机当前的状态 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <!-- 访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:name=".MyApplication"
@@ -48,6 +46,7 @@
             android:authorities="com.ychen.tourism.helper.ProviderHelper"
             android:name="com.ychen.tourism.helper.ProviderHelper"/>
         <activity android:name=".activity.PoiDetailActivity"/>
+        <activity android:name=".activity.FoodActivity"/>
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"

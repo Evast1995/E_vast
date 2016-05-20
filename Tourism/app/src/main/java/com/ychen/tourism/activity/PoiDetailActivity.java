@@ -29,7 +29,7 @@ public class PoiDetailActivity extends BaseActivity{
     /**
      * 初始化
      */
-    private void init(){
+    protected void init(){
         Intent intent = getIntent();
         String url = intent.getStringExtra(ContantsUtil.URL_KEY);
         mProgressBar = (MyProgressBar) findViewById(R.id.progressbar);

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.baidu.mapapi.SDKInitializer;
 import com.ychen.tourism.service.InitService;
 
@@ -14,9 +16,12 @@ import com.ychen.tourism.service.InitService;
  */
 public class MyApplication extends Application{
     private InitService mInitService;
+    private RequestQueue requestQueue;
+    private static MyApplication context;
     @Override
     public void onCreate() {
         super.onCreate();
+        context = this;
         // 在使用 SDK 各组间之前初始化 context 信息，传入 ApplicationContext
         SDKInitializer.initialize(getApplicationContext());
 //        initService();
@@ -51,5 +56,20 @@ public class MyApplication extends Application{
     private void initService(){
         Intent intent = new Intent(getApplicationContext(),InitService.class);
         bindService(intent, con, BIND_AUTO_CREATE);
+    }
+
+    public static MyApplication getInstance() {
+        return context;
+    }
+
+    public RequestQueue getRequestQueue() {
+        if (requestQueue == null) {
+            synchronized (this) {
+                if (requestQueue == null) {
+                    requestQueue = Volley.newRequestQueue(this);
+                }
+            }
+        }
+        return requestQueue;
     }
 }

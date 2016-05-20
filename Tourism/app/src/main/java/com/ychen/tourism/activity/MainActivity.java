@@ -7,6 +7,7 @@ import com.ychen.tourism.R;
 import com.ychen.tourism.fragment.AccountFragment;
 import com.ychen.tourism.fragment.CommentFragment;
 import com.ychen.tourism.fragment.FindFragment;
+import com.ychen.tourism.fragment.FoodFragment;
 import com.ychen.tourism.fragment.PlanFragment;
 import com.ychen.tourism.widget.BottomLayout;
 import com.ychen.tourism.widget.TitleLayout;
@@ -17,6 +18,7 @@ public class MainActivity extends BaseFragmentActivity{
     private CommentFragment commentFragment;
     private PlanFragment planFragment;
     private FindFragment findFragment;
+    private FoodFragment foodFragment;
     private TitleLayout titleLayout;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,8 @@ public class MainActivity extends BaseFragmentActivity{
             planFragment = (PlanFragment) fragment;
         }else if(fragment instanceof FindFragment){
             findFragment = (FindFragment) fragment;
+        }else if(fragment instanceof FoodFragment){
+            foodFragment = (FoodFragment) fragment;
         }
     }
 
@@ -69,6 +73,14 @@ public class MainActivity extends BaseFragmentActivity{
                 titleLayout.setTitle(R.string.visit_plan);
             }
         });
+        bottomLayout.addNavigate(R.string.vist_delicous,R.drawable.find_bg,new BottomLayout.IClickCallBack(){
+            @Override
+            public void clickCallBack() {
+                if(null == foodFragment) {foodFragment = new FoodFragment();}
+                switchFragmentContent(R.id.fragment,foodFragment);
+                titleLayout.setTitle(R.string.vist_delicous);
+            }
+        });
         bottomLayout.addNavigate(R.string.visit_find,R.drawable.find_bg,new BottomLayout.IClickCallBack() {
             @Override
             public void clickCallBack() {
@@ -93,5 +105,6 @@ public class MainActivity extends BaseFragmentActivity{
                 titleLayout.setTitle(R.string.account);
             }
         });
+
     }
 }
