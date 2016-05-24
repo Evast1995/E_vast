@@ -41,6 +41,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.AddCommentActivity"/>
         <activity android:name=".activity.AddPlanActivity"/>
         <provider
             android:authorities="com.ychen.tourism.helper.ProviderHelper"

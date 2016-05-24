@@ -65,7 +65,7 @@ public class MainActivity extends BaseFragmentActivity{
      */
     private void initNavigate(){
         bottomLayout = (BottomLayout) findViewById(R.id.bottom_navigation);
-        bottomLayout.addNavigate(R.string.visit_plan, R.drawable.find_bg, new BottomLayout.IClickCallBack() {
+        bottomLayout.addNavigate(R.string.visit_plan, R.drawable.plan_log, new BottomLayout.IClickCallBack() {
             @Override
             public void clickCallBack() {
                 if(null == planFragment){planFragment = new PlanFragment();}
@@ -73,7 +73,7 @@ public class MainActivity extends BaseFragmentActivity{
                 titleLayout.setTitle(R.string.visit_plan);
             }
         });
-        bottomLayout.addNavigate(R.string.vist_delicous,R.drawable.find_bg,new BottomLayout.IClickCallBack(){
+        bottomLayout.addNavigate(R.string.vist_delicous,R.drawable.food_log,new BottomLayout.IClickCallBack(){
             @Override
             public void clickCallBack() {
                 if(null == foodFragment) {foodFragment = new FoodFragment();}
@@ -89,7 +89,7 @@ public class MainActivity extends BaseFragmentActivity{
                 titleLayout.setTitle(R.string.visit_find);
             }
         });
-        bottomLayout.addNavigate(R.string.comments,R.drawable.find_bg,new BottomLayout.IClickCallBack() {
+        bottomLayout.addNavigate(R.string.comments,R.drawable.comment_log,new BottomLayout.IClickCallBack() {
             @Override
             public void clickCallBack() {
                 if(null == commentFragment){commentFragment = new CommentFragment();}
@@ -97,7 +97,7 @@ public class MainActivity extends BaseFragmentActivity{
                 titleLayout.setTitle(R.string.comments);
             }
         });
-        bottomLayout.addNavigate(R.string.account,R.drawable.find_bg,new BottomLayout.IClickCallBack() {
+        bottomLayout.addNavigate(R.string.account,R.drawable.account_log,new BottomLayout.IClickCallBack() {
             @Override
             public void clickCallBack() {
                 if(null == accountFragment) accountFragment = new AccountFragment();

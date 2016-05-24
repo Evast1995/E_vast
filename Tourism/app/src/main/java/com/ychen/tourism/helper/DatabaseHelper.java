@@ -31,14 +31,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sBuffer.append("["+Table.PlanTable.END_TIME+"] TEXT,");
         sBuffer.append("["+Table.PlanTable.OVERHEAD+"] TEXT,");
         sBuffer.append("["+Table.PlanTable.ADDRESS+"] TEXT)");
+//
+//        sBuffer.append("CREATE TABLE if NOT EXISTS[" + Table.COMMENT_NAME + "] (");
+//        sBuffer.append("["+Table.ID+"] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, ");
+//        sBuffer.append("["+Table.CommentTable.TITLE+"] TEXT,");
+//        sBuffer.append("["+Table.CommentTable.DESCRIPTION+"] TEXT,");
+//        sBuffer.append("["+Table.CommentTable.CONTEXT+"] TEXT)");
+
+
+
         // 执行创建表的SQL语句
         db.execSQL(sBuffer.toString());
+
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         if(newVersion == oldVersion){return;}
         db.execSQL("DROP TABLE IF EXISTS " + Table.PLAN_TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + Table.COMMENT_NAME);
         onCreate(db);
     }
 }

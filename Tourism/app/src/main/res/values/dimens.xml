@@ -14,4 +14,6 @@
     <dimen name="edit_margin_top">8dp</dimen>
     <dimen name="plan_item_height">45dp</dimen>
     <dimen name="arrow_icon_dimen">20dp</dimen>
+    <dimen name="head_image_head">60dp</dimen>
+    <dimen name="title_height">45dp</dimen>
 </resources>

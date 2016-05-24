@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/food_context_image_head" android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/food_context_name" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="涮羊肉"
+        android:layout_below="@id/food_context_image_head" android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp" android:textColor="@color/brown"
+        android:textStyle="bold" android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/food_context_introduce" android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:maxLines="3"
+        android:ellipsize="end" android:layout_marginLeft="15dp"
+        android:text="涮羊肉又称“羊肉火锅" android:layout_below="@id/food_context_name"
+        android:layout_marginBottom="6dp"/>
+    <TextView
+        android:id="@+id/food_context_open" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/open_message"
+        android:layout_below="@id/food_context_introduce" android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" android:textColor="?attr/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/making_step" android:layout_below="@+id/food_context_introduce"
+        android:layout_marginLeft="15dp" android:textColor="@color/black"
+        android:id="@+id/food_context_making_step"/>
+    <ListView
+        android:id="@+id/food_context_list_view" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@id/food_context_making_step"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

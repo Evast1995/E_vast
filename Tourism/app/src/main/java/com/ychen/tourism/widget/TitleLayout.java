@@ -41,6 +41,7 @@ public class TitleLayout extends FrameLayout{
         mView = inflater.inflate(R.layout.include_title_layout,this,true);
         titleTv = (TextView) mView.findViewById(R.id.center_title_layout);
         leftIv = (ImageView) mView.findViewById(R.id.back_icon);
+        leftIv.setVisibility(GONE);
         rightIv = (ImageView) mView.findViewById(R.id.right_icon);
     }
 
